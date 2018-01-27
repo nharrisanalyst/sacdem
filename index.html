@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+  <!-- Twitter meta data -->
+  <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="independentvz.com">
+<meta name="twitter:creator" content="@nathaniharris">
+<meta name="twitter:title" content="Sacramento Democrat Primary Interactive Map">
+<meta name="twitter:description" content="An Interactive Map of Sacramento's Democrat Primary Results You can explore Sacramento's communities and how the break down politically and economically through democratic primary results.">
+<meta name="twitter:image" content="https://farm9.staticflickr.com/8037/28329167510_95bcdd95a2_b.jpg">
+  
+<!-- Facebook meta data -->
+
+<meta property="og:url"           content="https://nharrisanalyst.github.io/sacdemprimary/" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="Sacramento Democrat Primary Interactive Map" />
+	<meta property="og:description"   content="An Interactive Map of Sacramento's Democrat Primary Results You can explore Sacramento's communities and how the break down politically and economically through democratic primary results." />
+	<meta property="og:image"         content="https://farm9.staticflickr.com/8037/28329167510_95bcdd95a2_b.jpg" />
+	
+	  
+    <meta charset="UTF-8">
+    <title>Sacramento Democrat Primary</title>
+  <style type="text/css">
+   #mapid { height: 650px; 
+   			width: 900px;
+   			float:left;
+   
+   }
+   
+#prenum{
+margin-top:0;
+margin-bottom:0;
+
+
+}
+#title{
+font-family: Sans-Serif;
+margin-bottom:5px;
+
+}
+   
+div.tooltip {
+  color: #222; 
+  background: #fff; 
+  padding: .5em; 
+  text-shadow: #f5f5f5 0 1px 0;
+  border-radius: 2px; 
+  box-shadow: 0px 0px 2px 0px #a6a6a6; 
+  opacity: 0.9; 
+  position: absolute;
+}
+
+#insideWrapper{
+float:right;
+width:300px;
+
+
+}
+.twitter-share-button .fb-share-button{
+display:inline;
+}
+.twitter-share-button{
+float:left;
+
+}
+#introductionTwo{
+float:left;
+
+}
+   
+  </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.5/leaflet.css" />
+  </head>
+  <body>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.5/leaflet.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" type="text/javascript"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <div id="author"> by <a href="https://www.twitter.com/nathaniharris"><u> Nathan Harris</u></a> </div>
+  <div id='title'><h1>An interactive Map of Sacramento's Democratic Primary<h1></div>
+ <div id='legend'></div> 
+  <div id="wrapper">
+  <div id ="insideWrapper">
+  
+  <div id ='introduction'>The Democratic Primary was held on June 7th 2016. The race nationally and locally was primarily between two candidates Hilary Clinton
+  and Bernie Sanders. <p id ='bernie'>Bernie Sanders ran on a platform that was openly socialist and vary liberal( as Bernie Sanders is a self proclaimed socialist). Bernie Sanders garnered 
+  most of his support from young voters; through campaign promises for nationalized health care and free higher education.<p> Hillary Clinton ran as a moderite liberal; as one who had the experience and can work inside the system for change. Hillary also 
+  promised to continue to have a proactive international policy. Hillary Clinton garnered support from baby boomers; older more established democrats and African Americans.</p> <p> Knowing about both candidates bases
+  we can learn a lot about our community through this interactive map. It shows that Bernie did the best in Midtown Sacramento where many young democrats live, and  the rent is cheap and bars are a plenty. This map displays that midtown attracts young more liberal people to live.
+  Hillary did her best in The Pocket, East Sacramento and South Sacramento. The Pocket and East Sac communities are vary similar the communities are filled with upper middle class homes occupied by Educated baby boomers. While the South Sacramento is populated by many lower middle class housing and more minorities reside there.</P>
+   </div>
+   
+  </div>
+  <div id="mapid"></div>
+  </div>
+  
+  
+  <div id = "share container">
+ <div class="fb-share-button" data-href="https://nharrisanalyst.github.io/sacdemprimary/" data-layout="button_count" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnharrisanalyst.github.io%2Ffreeagentdashboard%2F&amp;src=sdkpreparse">Share</a></div> <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+ </div>
+ <div id= "introductionTwo"></div>
+ <script src="sacPresMap.js"></script>
+  </body>
+</html>
